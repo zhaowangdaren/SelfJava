@@ -1,0 +1,30 @@
+package bounce.ustc.edu.cn;
+
+import java.awt.BorderLayout;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class Bounce {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	class BounceFrame extends JFrame{
+		private BallComponent comp;
+		public static final int STEPS = 1000;
+		public static final int DELAY = 3;
+		
+		public BounceFrame(){
+			setTitle("Bounce");
+			
+			comp = new BallComponent();
+			this.add(comp, BorderLayout.CENTER);
+			JPanel buttonPanel = new JPanel();
+			
+		}
+	}
+
+}
